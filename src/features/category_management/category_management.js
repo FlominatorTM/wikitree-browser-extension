@@ -1104,10 +1104,7 @@ function AddCat(wpTextbox1, cat) {
   if (cat == "Battenberg (Eder), Hessen One Place Study") {
     bio = bio
       .replace("==Biography==", "== Biography ==")
-      .replace(
-        "== Biography ==",
-        "== Biography ==\n{{One Place Study|place=Battenberg (Eder), Hessen|category=Battenberg (Eder), Hessen One Place Study}}"
-      );
+      .replace("== Biography ==", "== Biography ==\n{{One Place Study|place=Battenberg (Eder), Hessen}}");
   }
   if (bio.indexOf(cat + "]]") == -1 && bio.indexOf(catUnderlines) == -1) {
     wpTextbox1.value = catSyntax + "\n" + bio;
